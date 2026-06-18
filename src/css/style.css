@@ -1,0 +1,292 @@
+:root{
+    --primary:#22c55e;
+    --primary-dark:#15803d;
+    --white:#fff;
+    --gray:#6b7280;
+    --text:#1f2937;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f8fafc;
+}
+
+header{
+    position:fixed;
+    width:100%;
+    background:white;
+    box-shadow:0 2px 15px rgba(0,0,0,.08);
+    z-index:100;
+}
+
+nav{
+    max-width:1200px;
+    margin:auto;
+    padding:20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav h2{
+    color:var(--primary);
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    text-decoration:none;
+    color:var(--text);
+    font-weight:500;
+}
+
+.hero{
+    min-height:100vh;
+
+    background:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=1920');
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    padding:20px;
+}
+
+.hero-content{
+    max-width:800px;
+}
+
+.badge{
+    background:rgba(255,255,255,.15);
+    padding:10px 20px;
+    border-radius:999px;
+}
+
+.hero h1{
+    margin:25px 0;
+    font-size:3.5rem;
+}
+
+.hero p{
+    font-size:1.1rem;
+    margin-bottom:30px;
+}
+
+.hero-buttons{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+}
+
+.btn,
+.btn-outline{
+    padding:14px 28px;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.btn{
+    background:var(--primary);
+    color:white;
+}
+
+.btn-outline{
+    border:2px solid white;
+    color:white;
+}
+
+.stats{
+    background:white;
+    display:flex;
+    justify-content:center;
+    gap:80px;
+    padding:50px;
+}
+
+.stats h3{
+    color:var(--primary);
+    font-size:2.2rem;
+}
+
+.sobre,
+.processo,
+.planos,
+.contato{
+    padding:90px 20px;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.cards{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    transition:.3s;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.card h3,
+.card p{
+    padding:20px;
+}
+
+.steps{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.step{
+    background:white;
+    width:300px;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+}
+
+.step span{
+    color:var(--primary);
+    font-size:2rem;
+    font-weight:700;
+}
+
+.planos-container{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.plano{
+    width:300px;
+    background:white;
+    border-radius:20px;
+    padding:35px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.destaque{
+    background:linear-gradient(135deg,#22c55e,#15803d);
+    color:white;
+    transform:scale(1.05);
+}
+
+.preco{
+    font-size:2rem;
+    margin:20px 0;
+}
+
+form{
+    max-width:700px;
+    margin:auto;
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+input,
+textarea{
+    padding:15px;
+    border:2px solid #e5e7eb;
+    border-radius:10px;
+}
+
+button{
+    background:var(--primary);
+    color:white;
+    border:none;
+    padding:15px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+footer{
+    background:#111827;
+    color:white;
+    padding:60px 20px 30px;
+}
+
+.footer-grid{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.copy{
+    text-align:center;
+    margin-top:20px;
+}
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .hero h1{
+        font-size:2.2rem;
+    }
+
+    .stats{
+        flex-direction:column;
+        text-align:center;
+        gap:30px;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+    }
+
+}
