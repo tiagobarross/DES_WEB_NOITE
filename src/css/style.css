@@ -255,6 +255,16 @@ footer{
     padding:60px 20px 30px;
 }
 
+#footer-links-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links{
+    text-decoration: none;
+    color: var(--white);
+}
+
 .footer-grid{
     max-width:1200px;
     margin:auto;
